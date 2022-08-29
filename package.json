@@ -1,0 +1,23 @@
+{
+  "name": "modulo-11-exercicio-ebac",
+  "version": "1.0.0",
+  "description": "Repositório Contendo Exercício Modulo 11 do Curso QA da EBAC",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tiagoflor/modulo-11-exercicio-ebac.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tiagoflor/modulo-11-exercicio-ebac/issues"
+  },
+  "homepage": "https://github.com/tiagoflor/modulo-11-exercicio-ebac#readme",
+  "devDependencies": {
+    "cypress": "^10.6.0"
+  }
+}
