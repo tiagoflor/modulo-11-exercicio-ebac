@@ -13,14 +13,7 @@ describe('Criar Cadastro com Email e Senha', () => {
      cy.screenshot() //evidenciar cada cenário concluído
     });
 
-    //Caminho Feliz
-    it('Criar Pre Cadastro com Sucesso', () => {
-      cy.get('#reg_email').type(emailFaker)
-      cy.get('#reg_password').type('senha@2022')
-      cy.get(':nth-child(4) > .button').click()
-
-      cy.get('.woocommerce-MyAccount-content > :nth-child(3)').should('contain', 'A partir do painel de controle de sua conta, ')
-    });
+    // Fluxo Principal (caminho Feliz)
 
     it('Completar o pré cadastro com sucesso', () => {
       cy.get('#reg_email').type(emailFaker)
@@ -39,7 +32,7 @@ describe('Criar Cadastro com Email e Senha', () => {
     it('Utilizando e-mail existente', () => {
       cy.get('#reg_email').type('Jaylan_Pfeffer@gmail.com')
       cy.get('#reg_password').type('senha@2022')
-      cy.get('.woocommerce-form > .button').click()
+      cy.get(':nth-child(4) > .button').click()
 
       cy.get('.woocommerce-error').should('contain', 'Erro: Uma conta já está registrada com seu endereço de e-mail. Faça login.')
 

@@ -9,7 +9,7 @@ describe('Acesso tela de login', () => {
       cy.screenshot() //evidenciar cada cenário concluído
     });
 
-    // Fluxo Principal
+    // Fluxo Principal (caminho Feliz)
     it('Login na plataforma loja EBAC com Sucesso', () => {
       cy.get('#username').type('aluno_ebac@teste.com')
       cy.get('#password').type('teste@teste.com')
